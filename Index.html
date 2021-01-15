@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaardid</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="menu" style="width: 0%">
+        <div class= "button-area">
+            <button class="btn" id="sort">Sort</button>
+            <button class="btn" id="filter">Filter</button>
+        </div>
+        <div id="sorting">
+            <p>Country</p>
+            <div class="double-btn">
+                <button id="ascendButton" class="sortbtn" autofocus>Ascending</button>
+                <button id="descendButton" class="sortbtn">Descending</button>
+            </div>
+            <p>Capital</p>
+            <div class="double-btn">
+                <button id="capitalAscSortButton" class="sortbtn">Ascending</button>
+                <button id="capitalDescSortButton" class="sortbtn">Descending</button>
+            </div>
+            <p>Population</p>
+            <div class="double-btn">
+                <button id="populationAscButton" class="sortbtn">Ascending</button>
+                <button id="populationDescButton" class="sortbtn">Descending</button>
+            </div>
+        </div> 
+        <div hidden id="filtering">
+            <p>Region</p>
+            <div class="double-btn">
+                <select id="region-s" multiple>
+                    <option value="Asia">Asia</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Americas">Americas</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Oceania">Oceania</option>
+                    <option value="Polar">Polar</option>
+                </select>
+            </div>
+            <p>Languages</p>
+            <div class="rage__value" ></div>
+            <input type="range" min="1" max="10" class="slider" id="langRange">
+            <sub>0</sub>
+            <sub id="to-right">10</sub>
+        </div>
+    </div>
+    <button id="navbtn">☰ </button>
+    <div class="container">
+        <div id="row">
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="nav.js"></script>
+</body>
+<footer></footer>
+</html>
